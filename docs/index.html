@@ -1,0 +1,260 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Lab1 Report &mdash; lab1  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> lab1
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Lab1 Report</a></li>
+<li><a class="reference internal" href="#inroduction">Inroduction</a></li>
+<li><a class="reference internal" href="#materials-and-methods">Materials and Methods</a></li>
+<li><a class="reference internal" href="#results">Results</a></li>
+<li><a class="reference internal" href="#pros-cons">Pros&amp;Cons</a></li>
+<li><a class="reference internal" href="#discussions">Discussions</a></li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">lab1</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Lab1 Report</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/index.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="lab1-report">
+<h1>Lab1 Report<a class="headerlink" href="#lab1-report" title="Permalink to this headline">¶</a></h1>
+<p>Title: Dependency Analysis and Dependency Graph on EnglishPal</p>
+<p>Author: 黄文心、朱彩凤、朱倩</p>
+<p>Date: 2021/5/20</p>
+</div>
+<div class="section" id="inroduction">
+<h1>Inroduction<a class="headerlink" href="#inroduction" title="Permalink to this headline">¶</a></h1>
+<p>We want to avoid the Big Ball of Mud antipattern in our software application. In this experiment, we do dependency analysis and draw dependency graph about it and analysis the question about the health status of EnglishPal’s current architecture.</p>
+</div>
+<div class="section" id="materials-and-methods">
+<h1>Materials and Methods<a class="headerlink" href="#materials-and-methods" title="Permalink to this headline">¶</a></h1>
+<p>In this lab, we study the dependency relationships among modules (or classes) in the source code of EnglishPal .We use Snakefood[1] tool to generate module level dependency graph, and use Mermaid tool to draw class / function level dependency graph.</p>
+<p>Graphviz (graph visualization), the abbreviation of graph visualization tool, is an open source tool of Bell Labs. The main purpose can be specific language (DSL) script for visual output, support JPEG, PDF and other output styles. And it is very good cross platform, has supported Linux, MAC, window multi platform, binary installation mode, provides Fedora, Ubuntu, RHEL, Solaris, MacOS, windows and other systems.Using graphviz tool, using script output visual graphical interface, rapid graphical thinking.</p>
+<p>Mermaid is a library for drawing flow chart, state chart, sequence chart and Gantt chart. It uses JS for local rendering and is widely integrated into many markdown editors.As a JS rendering library, mermaid generates not a “picture”, but a piece of HTML code, so it is much safer.</p>
+</div>
+<div class="section" id="results">
+<h1>Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>The module-level dependency graph of EnglishPal</p>
+<ul>
+<li><p>Code: <a class="reference external" href="https://github.com/lqzcf10/lab1/blob/master/source/mermaid.txt">https://github.com/lqzcf10/lab1/blob/master/source/mermaid.txt</a></p></li>
+<li><p>SVG: <a class="reference external" href="https://github.com/lqzcf10/lab1/blob/master/source/graphviz.svg">https://github.com/lqzcf10/lab1/blob/master/source/graphviz.svg</a></p></li>
+</ul>
+</li>
+<li><p>The class/function-level dependency graph of EnglishPal</p>
+<ul>
+<li><p>Code: <a class="reference external" href="https://github.com/lqzcf10/lab1/blob/master/source/EnglishPalDependency(Graphviz).txt">https://github.com/lqzcf10/lab1/blob/master/source/EnglishPalDependency(Graphviz).txt</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="pros-cons">
+<h1>Pros&amp;Cons<a class="headerlink" href="#pros-cons" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Pros:This project framework is clearly structured, easy to analyze and maintain and improves functions properly</p></li>
+<li><p>Cons:Basic functions are fully determined, with low room for further innovation and many places hava to be improved</p></li>
+</ul>
+</div>
+<div class="section" id="discussions">
+<h1>Discussions<a class="headerlink" href="#discussions" title="Permalink to this headline">¶</a></h1>
+<p>Using snake food tool, we can analyze the dependencies in project code and generate dependency graph for English pal
+Graphviz (graph visualization) is the abbreviation of graph visualization tool, which is an open source tool of Bell Labs.
+Using graphviz tool to generate dot file, mermaid draws the input dependency into function level dependency graph,
+Through dependency analysis and the drawing of englishpal dependency diagram, we can see the framework structure of the project more clearly and help us understand the question about the health status of EnglishPal‘s current architecture.</p>
+</div>
+<div class="section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<p>[1] <a class="reference external" href="http://furius.ca/snakefood/doc/snakefood-doc.html">Snakefood User Manual</a></p>
+<p>[2] <a class="reference external" href="https://dreampuf.github.io/GraphvizOnline/">Graphviz Online</a></p>
+<p>[3] <a class="reference external" href="https://thehackpost.com/a-brief-guide-how-to-write-a-computer-science-lab-report.html">A Brief Guide How to Write a Computer Science Lab Report</a></p>
+<p>[4] <a class="reference external" href="https://readthedocs.org/">Read the Docs</a>`</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, zcf.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
