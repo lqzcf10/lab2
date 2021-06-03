@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Lab1 Report &mdash; lab1  documentation</title>
+  <title>Lab2 Report &mdash; lab2  documentation</title>
   
 
   
@@ -52,7 +52,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> lab1
+            <a href="#" class="icon icon-home"> lab2
           
 
           
@@ -85,7 +85,7 @@
             
               <!-- Local TOC -->
               <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Lab1 Report</a></li>
+<li><a class="reference internal" href="#">Lab2 Report</a></li>
 <li><a class="reference internal" href="#inroduction">Inroduction</a></li>
 <li><a class="reference internal" href="#materials-and-methods">Materials and Methods</a></li>
 <li><a class="reference internal" href="#results">Results</a></li>
@@ -107,7 +107,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">lab1</a>
+          <a href="#">lab2</a>
         
       </nav>
 
@@ -140,7 +140,7 @@
     
       <li><a href="#" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Lab1 Report</li>
+      <li>Lab2 Report</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -159,58 +159,48 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="lab1-report">
-<h1>Lab1 Report<a class="headerlink" href="#lab1-report" title="Permalink to this headline">¶</a></h1>
-<p>Title: Dependency Analysis and Dependency Graph on EnglishPal</p>
+  <div class="section" id="lab2-report">
+<h1>Lab2 Report<a class="headerlink" href="#lab2-report" title="Permalink to this headline">¶</a></h1>
+<p>Title:  Lab2 The ORM Magic</p>
 <p>Author: 黄文心、朱彩凤、朱倩</p>
-<p>Date: 2021/5/20</p>
+<p>Date: 2021/6/3</p>
 </div>
 <div class="section" id="inroduction">
 <h1>Inroduction<a class="headerlink" href="#inroduction" title="Permalink to this headline">¶</a></h1>
-<p>We want to avoid the Big Ball of Mud antipattern in our software application. In this experiment, we do dependency analysis and draw dependency graph about it and analysis the question about the health status of EnglishPal’s current architecture.</p>
+<p>In this experiment, we do dependency inversion and Manipulate database with SQLAlchemy’s ORM to create four database tables for EnglishPal, a web application for boosting the learner’s vocabulary.</p>
 </div>
 <div class="section" id="materials-and-methods">
 <h1>Materials and Methods<a class="headerlink" href="#materials-and-methods" title="Permalink to this headline">¶</a></h1>
-<p>In this lab, we study the dependency relationships among modules (or classes) in the source code of EnglishPal .We use Snakefood[1] tool to generate module level dependency graph, and use Mermaid tool to draw class / function level dependency graph.</p>
-<p>Graphviz (graph visualization), the abbreviation of graph visualization tool, is an open source tool of Bell Labs. The main purpose can be specific language (DSL) script for visual output, support JPEG, PDF and other output styles. And it is very good cross platform, has supported Linux, MAC, window multi platform, binary installation mode, provides Fedora, Ubuntu, RHEL, Solaris, MacOS, windows and other systems.Using graphviz tool, using script output visual graphical interface, rapid graphical thinking.</p>
-<p>Mermaid is a library for drawing flow chart, state chart, sequence chart and Gantt chart. It uses JS for local rendering and is widely integrated into many markdown editors.As a JS rendering library, mermaid generates not a “picture”, but a piece of HTML code, so it is much safer.</p>
+<p>In this lab, we study the dependency inversion ,High level module should not rely on low level module, both of them should rely on its abstraction; Abstraction should not rely on details; Details should rely on abstraction.</p>
+<p>Abstractions should not depend on details, details should depend on abstractions. In other words, programming for the interface, not for the implementation.</p>
+<p>With object-relational mapper (ORM) provided by SQLAlchemy, we can map a class to a database table, and map an object of that class to a row in the databasetable and o create four database tables for EnglishPal. With SQLAlchemy’s ORM, we can avoid directly using any raw SQL statements,let ORM depend on the domain model,but not the other way around.</p>
+<p>Use FOREIGN KEY  to understand the relationship between two tables.</p>
 </div>
 <div class="section" id="results">
 <h1>Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><p>The module-level dependency graph of EnglishPal</p>
-<ul>
-<li><p>Code: <a class="reference external" href="https://github.com/lqzcf10/lab1/blob/master/source/mermaid.txt">https://github.com/lqzcf10/lab1/blob/master/source/mermaid.txt</a></p></li>
-<li><p>SVG: <a class="reference external" href="https://github.com/lqzcf10/lab1/blob/master/source/graphviz.svg">https://github.com/lqzcf10/lab1/blob/master/source/graphviz.svg</a></p></li>
-</ul>
-</li>
-<li><p>The class/function-level dependency graph of EnglishPal</p>
-<ul>
-<li><p>Code: <a class="reference external" href="https://github.com/lqzcf10/lab1/blob/master/source/EnglishPalDependency(Graphviz).txt">https://github.com/lqzcf10/lab1/blob/master/source/EnglishPalDependency(Graphviz).txt</a></p></li>
-</ul>
-</li>
-</ul>
+<p>code:The modified model.docx</p>
 </div>
 <div class="section" id="pros-cons">
 <h1>Pros&amp;Cons<a class="headerlink" href="#pros-cons" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p>Pros:This project framework is clearly structured, easy to analyze and maintain and improves functions properly</p></li>
+<li><p>Pros:This project framework is clearly structured,code easy to analyze and maintain and improves functions properly</p></li>
 <li><p>Cons:Basic functions are fully determined, with low room for further innovation and many places hava to be improved</p></li>
 </ul>
 </div>
 <div class="section" id="discussions">
 <h1>Discussions<a class="headerlink" href="#discussions" title="Permalink to this headline">¶</a></h1>
-<p>Using snake food tool, we can analyze the dependencies in project code and generate dependency graph for English pal
-Graphviz (graph visualization) is the abbreviation of graph visualization tool, which is an open source tool of Bell Labs.
-Using graphviz tool to generate dot file, mermaid draws the input dependency into function level dependency graph,
-Through dependency analysis and the drawing of englishpal dependency diagram, we can see the framework structure of the project more clearly and help us understand the question about the health status of EnglishPal‘s current architecture.</p>
+<p>Use Sqlalchemy’s ORM as a web application to improve learners’ vocabulary. The abstraction of code does not depend on the type of database and the uniqueness of database itself. It provides powerful general statements and types. It doesn’t need to consider the database you choose and its manufacturer’s implementation. Sqlalchemy also allows you to transfer data logic from Oracle or PostgreSQL to the application’s database. It standardizes and escapes the database before submitting operations to it. This avoids some common problems, such as database injection attacks.</p>
+<p>There are three ways to transfer dependencies: interface transfer, construction method transfer and setter method transfer.
+In the actual programming, we generally need to do the following three points:
+(1) Low level modules should have abstract classes or interfaces, or both.
+(2) The declaration type of variable should be abstract class or interface.
+(3) The use of inheritance follows the Riemannian substitution principle.
+The core of the dependency inversion principle is to program for interfaces.</p>
 </div>
 <div class="section" id="references">
 <h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
-<p>[1] <a class="reference external" href="http://furius.ca/snakefood/doc/snakefood-doc.html">Snakefood User Manual</a></p>
-<p>[2] <a class="reference external" href="https://dreampuf.github.io/GraphvizOnline/">Graphviz Online</a></p>
-<p>[3] <a class="reference external" href="https://thehackpost.com/a-brief-guide-how-to-write-a-computer-science-lab-report.html">A Brief Guide How to Write a Computer Science Lab Report</a></p>
-<p>[4] <a class="reference external" href="https://readthedocs.org/">Read the Docs</a>`</p>
+<p>[1] <a class="reference external" href="https://thehackpost.com/a-brief-guide-how-to-write-a-computer-science-lab-report.html">A Brief Guide How to Write a Computer Science Lab Report</a></p>
+<p>[2] <a class="reference external" href="https://readthedocs.org/">Read the Docs</a>`<a class="reference external" href="#"></a></p>
 </div>
 
 
